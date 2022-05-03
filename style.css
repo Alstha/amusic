@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fjalla+One&family=Pushster&family=Righteous&family=Secular+One&display=swap');
-*{margin: 0;padding: 0;}
+*{margin: 0;padding: 0; user-select:none;}
+body::-webkit-scrollbar {
+  display: none; 
+}
 #first{
     width: 1300px;
     height: 600px;
