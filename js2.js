@@ -20,6 +20,8 @@ const aa=document.getElementById("aa")
 const bb=document.getElementById("bb")
 const cc=document.getElementById("cc")
 const dd=document.getElementById("dd")
+const ee=document.getElementById("ee")
+const ff=document.getElementById("ff")
 
 var preload=document.getElementById("load")
 
@@ -130,7 +132,17 @@ const songs= [
     name:"b14",
     title:"14) -Sathi-",
     artist:"Yama Buddha"
-    }
+    },
+    {
+    name:"b15",
+    title:"15) -YETI YETI PANI-",
+    artist:"Almoda Rana Uprety"
+    },
+    {
+    name:"b16",
+    title:"16) -YATRA-",
+    artist:"V-TEN"
+    },
 ]
 
 const loadSong= (songs) => {
@@ -216,6 +228,16 @@ const prevSong = () => {
         playMusic();
         
     };
+    const eeSong = () => {
+        loadSong(songs[15]);
+        playMusic();
+        
+    };
+    const ffSong = () => {
+        loadSong(songs[16]);
+        playMusic();
+        
+    };
    
     
 music.addEventListener("ended", nextSong);
@@ -237,6 +259,8 @@ aa.addEventListener('click', aaSong);
 bb.addEventListener('click', bbSong);
 cc.addEventListener('click', ccSong);
 dd.addEventListener('click', ddSong);
+ee.addEventListener('click', eeSong);
+ff.addEventListener('click', ffSong);
 
 
 

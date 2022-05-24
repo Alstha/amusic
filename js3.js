@@ -20,6 +20,9 @@ const aa=document.getElementById("aa")
 const bb=document.getElementById("bb")
 const cc=document.getElementById("cc")
 const dd=document.getElementById("dd")
+const ee=document.getElementById("ee")
+const ff=document.getElementById("ff")
+const gg=document.getElementById("gg")
 
 var preload=document.getElementById("load")
 
@@ -131,7 +134,22 @@ const songs= [
     name:"c14",
     title:"14) -Yaalgar-",
     artist:"CarryMinati"
-    }
+    },
+    {
+    name:"c15",
+    title:"15) -ABHI TOH PARTY-",
+    artist:"BADSHAH"
+    },
+    {
+    name:"c16",
+    title:"15) -Oo WANTA WoW-",
+    artist:"Indravathi Chauhan"
+    },
+    {
+    name:"c17",
+    title:"15) -Khatam Hue Waande-",
+    artist:"Emiway Bantai"
+    },
 ]
 
 const loadSong= (songs) => {
@@ -217,6 +235,21 @@ const prevSong = () => {
         playMusic();
         
     };
+    const eeSong = () => {
+        loadSong(songs[15]);
+        playMusic();
+        
+    };
+    const ffSong = () => {
+        loadSong(songs[16]);
+        playMusic();
+        
+    };
+    const ggSong = () => {
+        loadSong(songs[17]);
+        playMusic();
+        
+    };
    
     
 music.addEventListener("ended", nextSong);
@@ -238,6 +271,9 @@ aa.addEventListener('click', aaSong);
 bb.addEventListener('click', bbSong);
 cc.addEventListener('click', ccSong);
 dd.addEventListener('click', ddSong);
+ee.addEventListener('click', eeSong);
+ff.addEventListener('click', ffSong);
+gg.addEventListener('click', ggSong);
 
 
 

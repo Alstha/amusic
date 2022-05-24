@@ -27,6 +27,7 @@ const s=document.getElementById("s")
 const t=document.getElementById("t")
 const u=document.getElementById("u")
 const v=document.getElementById("v")
+const w=document.getElementById("w")
 
 var preload=document.getElementById("load")
 
@@ -139,37 +140,11 @@ const songs= [
     title:"14) -Senorita-",
     artist:"Shawn Mendes"
 },
-{
-    name:"b0",
-    title:"0) -Perfect-",
-    artist:"Ed Sheeran"
-},
-{
-    name:"b1",
-    title:"1) -Waka Waka-",
-    artist:"Shakira"
-},
-{
-    name:"b2",
-    title:"2) -SORRY-",
-    artist:"Justin Bieber"
-},    {
-    name:"b3",
-    title:"3) -Let Me Love You-",
-    artist:"Justinee"
-},{
-    name:"b4",
-    title:"4) -ALONE-",
-    artist:"Marshmellow"
-},
-{
-    name:"b5",
-    title:"5) -Shape Of You-",
-    artist:"Ed Sheeran"
-},    {
-    name:"b6",
-    title:"6) -BABY-",
-    artist:"Justin Bieber"
+
+    {
+    name:"a15",
+    title:"15) -BAD BOY-",
+    artist:"Tungevaag"
 }
 
 ]
@@ -282,6 +257,10 @@ const prevSong = () => {
         loadSong(songs[21]);
         playMusic();
     };
+    const wSong = () => {
+        loadSong(songs[22]);
+        playMusic();
+    };
     
 music.addEventListener("ended", nextSong);
 next.addEventListener('click', nextSong);
@@ -309,6 +288,7 @@ s.addEventListener('click', sSong);
 t.addEventListener('click', tSong);
 u.addEventListener('click', uSong);
 v.addEventListener('click', vSong);
+w.addEventListener('click', vSong);
 
 
 

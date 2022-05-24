@@ -196,7 +196,7 @@ b:nth-child(1){
   
 .songlist{
     width: 1000px ;
-    height: 1110px;
+    height: fit-content;
     background: #7AAD36;
     background: -webkit-radial-gradient(top, #7AAD36, #3C5B69);
     background: -moz-radial-gradient(top, #7AAD36, #3C5B69);
